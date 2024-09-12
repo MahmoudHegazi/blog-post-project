@@ -50,7 +50,7 @@ You can test the full CSS masking behavior by toggling the "active_mask" class o
 # why simple desgin:
 No external desgin created by professional desginers used for project copyright!
 
-As a full-stack web developer, my primary focus is on application development, logic, problem-solving, database management, and user experience. While I have a strong understanding of HTML5 and CSS3 functionality, such as media queries, my emphasis is not on design tools that require extensive experience, like Figma, photoshop, etc.
+As a full-stack web developer, my primary focus is on application development, logic, problem-solving, database management, and user experience. While I have a strong understanding of HTML5 and CSS3 functionality, such as media queries, flexbox, grid, bootstrap my emphasis is not on design tools that require extensive experience, like Figma, photoshop, etc.
 
 I do not prioritize design expertise that is akin to that of fashion professionals who match colors and consider aesthetic details. Instead, I focus on creating applications similar to those developed by major companies like Google, YouTube, and Facebook, which prioritize functionality and user engagement over design intricacies.
 
