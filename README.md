@@ -1,16 +1,24 @@
-# blog-post-project
-it's simple repsonsive desgin for blog which include also a desgin for blog post, the project cotnains two page, also I'm using css3 such as grid and flexbox to make it full responsive on large, mid and small screens.
+# Blog Post Project
 
-# languages:
+This project is a simple responsive design for a blog that includes a layout for individual blog posts. It contains two pages, and I utilized CSS3 features such as Grid and Flexbox to ensure full responsiveness on large, medium, and small screens.
+
+# Languages:
 * HTML5
 * CSS3
 * JavaScript
 
 # Notes:
-1. project using small based class like bootstrap also names of classes used almost identical to bootstrap4 while if you are included bootstrap into your project no single calls will confliect with bs4 classes as i'm using "_" instead of "-" and for short 1 word classes such as btn i added extra constient word which is "set" at the begning for all similr
+1. The project uses a small set of classes similar to Bootstrap. The names of the classes used are almost identical to Bootstrap 4. If you include Bootstrap in your project, there will be no conflicts since I have used "_" instead of "-" in class names. For short, single-word classes such as "btn," I added an extra consonant, "set," at the beginning for all similar classes.
 
-# advanced part:
-there are use of advanced masking with css which in my opinion considered the most suitable and well supported by all browser masking for modal, I tried to smuilate the bootstrap modal, and using this masking can say it same as bs or even simpler the code and better, also note the full modal is built based on css3 you not need single js line of code incase you decide display it manual (as everything done using just 1 class I also to make it 0 js code and keep it same as bs modal I decided make the masking in the modal first parent and second parent is the content that display the modal so no need js to create element for masking etc, also my masking used prevent any actions can done on the elements in background without any js as it not use filters or opacity it use element full width and height in background with lower z-index than the content and with near to transparent color rgba with 0.72 transparency, note there still js code for modal to be displayed by clicking a button, also this js make sure it allow for multiple modals can created also make sure if multiple modals were exist and 1 opened already and some Pro user could overide the masking and access the button and click on another button that displays another modal the previous modal will be closed before the new open so always 1 modal opened, but you can test the full css masking open and off by just toggling single class  "active_mask" to the div with class "set_modal", also same as bootstrap you need to follow the same setructure to create new modal (modal header content and modal_footer content is optional but there are css in modal with no important used as the project uses 1 modal already you can overide the css using !important or bigger selector, also ID is optional but it used by the javascript and trigger the modal using a button with class "modal_opener" and data-target that includes the target modal ID for example `data-target="#subscribeModal"`.
+# Advanced Features:
+This project implements advanced masking with CSS, which, in my opinion, is the most suitable and well-supported method for modal dialogs across all browsers. I aimed to simulate the Bootstrap modal. This masking technique allows for implementation that is almost identical to Bootstrap, but simpler and cleaner in code.
+
+Additionally, the full modal is built entirely with CSS, requiring no JavaScript if you choose to display it manually. Everything is accomplished using just one class. To maintain a Bootstrap-like experience, I designed the masking to be the first parent of the modal, with the second parent holding the content to be displayed. Therefore, no JavaScript is needed to create elements for masking.
+
+The masking approach prevents any interactions with background elements without utilizing JavaScript. Instead, it uses full-width and full-height elements in the background, set with a lower z-index than the content and a nearly transparent color (RGBA with 0.72 transparency). Note that JavaScript is still used for displaying the modal by clicking a button. This JavaScript allows multiple modals to be created and ensures that if multiple modals are open and one is already displayed, any attempt to open another modal will close the previous one, thereby maintaining one open modal at a time.
+
+You can test the full CSS masking behavior by toggling the "active_mask" class on the div with the class "set_modal." Like Bootstrap, you need to follow a specific structure to create new modals (modal header, content, and modal footer). The modal footer content is optional, but there is CSS in the modal that can be overridden using `!important` or a more specific selector. The ID is also optional but is used by the JavaScript to trigger the modal with a button that has the class "modal_opener" and a `data-target` attribute including the target modal ID (e.g., `data-target="#subscribeModal"`).
+
 
 ```html
     <div class="set_modal" id="subscribeModal">
