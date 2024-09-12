@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+    <!-- simple script for modal and filters -->
+    <script type="text/javascript" src="static/js/blog.js"></script>
+</head>
+
+<body>
+    <div id="blog" class="main_grid">
+        <!-- nav menu -->
+        <nav class="navmenu nav_menu d_flex">
+            <a href="index.html" class="nav_item active">Home</a>
+            <a href="#" class="nav_item">About</a>
+            <button type="button" class="nav_item modal_opener" data-target="#subscribeModal">Subscribe</button>
+        </nav>
+        <!-- alert -->
+        <div id="alert_container" class="alert_cont">
+        </div>
+        <!-- header -->
+        <header class="head">
+            <!-- header content -->
+            <div class="head_content d_flex justify_around">
+                <div class="head_text">
+                    <h1 class="title txt_shadow"><strong>Who Is Mahmoud ?</strong></h1>
+                    <p class="poem_p">As a Full Stack Developer by your side, every goal within reach, every problem resolved with ease!</p>
+                </div>
+                <div class="head_image_wraper">
+                    <div class="head_image_main">
+                        <div class="head_image"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <!-- posts Title -->
+            <div class="posts_title_cont box_shadow">
+                <h1 class="posts_title txt_shadow box_shadow">Blog Posts</h1>
+            </div>
+            <!-- Posts -->
+            <div class="content_posts">
+                <a href="html_post.html" class="post box_shadow html_post" data-author="mahmoud">
+                    <div class="caption no_decoration">
+                        <h2 class="caption_head txt_shadow box_shadow">HTML intro</h2>
+                        <p class="caption_content">What is HTML basically used for?</p>
+                    </div>
+                </a>
+                <a href="#" class="post box_shadow css_post" data-author="ahmed">
+                    <div class="caption no_decoration">
+                        <h2 class="caption_head txt_shadow box_shadow">CSS intro</h2>
+                        <p class="caption_content">What is CSS basically used for?</p>
+                    </div>
+                </a>
+                <a href="#" class="post box_shadow js_post" data-author="mahmoud">
+                    <div class="caption no_decoration">
+                        <h2 class="caption_head txt_shadow box_shadow">JS intro</h2>
+                        <p class="caption_content">What is JS basically used for?</p>
+                    </div>
+                </a>
+                <a href="#" class="post box_shadow python_post" data-author="mahmoud">
+                    <div class="caption no_decoration">
+                        <h2 class="caption_head txt_shadow box_shadow">Python intro</h2>
+                        <p class="caption_content">What is Python basically used for?</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+        <!-- Right Aside -->
+        <aside class="side box_shadow" title="You can Filter posts of speacfic authors from this menu">
+            <div class="side_title_cont">
+                <h3 class="side_title">Filter by authors</h3>
+            </div>
+            <div class="side_filters">
+                <div class="filter_box box_shadow">
+                    <input id="mahmoud_filter" class="filter" type="checkbox" data-author="mahmoud" />
+                    <label class="filter_label" for="mahmoud_filter">Mahmoud@gmail.com</label>
+                </div>
+                <div class="filter_box box_shadow">
+                    <input id="ahmed_filter" class="filter" type="checkbox" data-author="ahmed" />
+                    <label class="filter_label" for="ahmed_filter">Ahmed@ahmed.blog</label>
+                </div>
+            </div>
+        </aside>
+        <!-- footer -->
+        <footer class="foot foot_style d_flex justify_between align_center">
+            <span><em>Follow Us On:</em></span>
+            <span>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-youtube"></i>
+            </span>
+        </footer>
+    </div>
+    <!-- Custom Modal With Masking add cont with set_modal and child cont with modal_content and thats it can included in any page (note modal converted to masking content is body of modal) to test power of modal just add class active_mask to set_modal cont and try remove it -->
+    <div class="set_modal" id="subscribeModal">
+        <div class="modal_content">
+            <div class="modal_header">
+                <h1 class="mhead_title txt_shadow">
+                    <span class="mhead_title_span">Subscribe</span>
+                </h1>
+                <div class="mhead_closer_cont">
+                    <button class="mhead_closer btn_danger close_modal"><i class="fa fa-close"></i></button>
+                </div>
+            </div>
+            <div class="modal_body">
+                <form id="subscribe_form" action="" method="post" onsubmit="event.preventDefault();">
+                    <div class="form_group">
+                        <label>Name:</label>
+                        <input type="text" class="form_input" placeholder="Enter Your Name" />
+                    </div>
+                    <div class="form_group">
+                        <label>Email:</label>
+                        <input type="email" class="form_input" placeholder="Enter Your Email" />
+                    </div>
+                    <div class="m_auto w_75 mt_3">
+                        <button class="set_btn btn_success btn_block w_100" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal_footer d_flex justify_end align_center">
+                <button class="close_modal set_btn btn_danger" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

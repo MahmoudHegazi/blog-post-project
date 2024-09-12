@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+</head>
+<body>
+    <div id="blog" class="post_grid">
+        <!-- nav menu -->
+        <nav class="post_navmenu nav_menu d_flex">
+            <a href="index.html" class="nav_item active">Home</a>
+            <a href="#" class="nav_item">About</a>
+            <button type="button" class="nav_item modal_opener" data-target="#subscribeModal">Subscribe</button>
+        </nav>
+        <main class="post_content">
+            <!-- posts Title -->
+            <div class="posts_title_cont box_shadow">
+                <h1 class="posts_title txt_shadow box_shadow">HTML Intro</h1>
+            </div>
+            <!-- Post Content -->
+            <article class="post_content" style="min-height: 500px;">
+                <section class="post_section">
+                    <div class="section_title">
+                        <h2 class="main_title">What is HTML?</h2>
+                    </div>
+                    <div class="section_content">
+                        <div class="text_container">
+                            <p class="section_txt">HTML, which refers to Hypertext Markup Language, was created in 1993 by Sir Tim Berners-Lee. We can say that HTML is the selection of any webpage. Almost all web browsers use HTML, but note that you can create a custom browser that works with different markup languages instead of HTML, though you will likely lose all the benefits of the current web. We will discuss that in "Simple Idea About HTML and Browser."</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="post_section">
+                    <div class="section_title">
+                        <h2 class="main_title">Understand HTML:</h2>
+                    </div>
+                    <div class="section_content">
+                        <div class="text_container">
+                            <p class="section_txt">HTML contains elements, and there are two types of elements in HTML: block elements and inline elements. Block elements are elements that take up the full width of the page, such as "DIV," "H1," and "P," while inline elements are elements placed next to each other on the page, so they take the width of their content. HTML elements must contain at least an opening tag and can contain attributes defined in the opening tag. Usually, HTML elements will contain closing tags unless they are void elements.</p>
+                            <p class="section_txt">HTML contains elements, and there are three types of elements, which are:</p>
+                            <ul>
+                                <li class="text_point">
+                                    <span>Void Elements:</span>
+                                    <ul>
+                                        <li>These elements are considered inline elements. They cannot have child elements or text within them, and they only have a start tag without a closing tag. Some void elements can contain text within them, but this text is included in the element attribute.</li>
+                                    </ul>
+                                </li>
+                                <li class="text_point">
+                                    <span>Raw Text Elements:</span>
+                                    <ul>
+                                        <li>This special type of element cannot contain child elements within it, but it can contain attributes and text or special text such as "SCRIPT," "PRE," and "CODE." Browsers may format the text of these elements in different ways, as seen with "PRE" for example.</li>
+                                    </ul>
+                                </li>
+                                <li class="text_point">
+                                    <span>Normal Elements:</span>
+                                    <ul>
+                                        <li>Normal elements are block elements that can contain attributes and child elements inside them, and they have opening and closing tags. They can also contain text, such as "DIV," "H1," "P," "Button," and "A."</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text_container">
+                            <h3 class="sub_heading">Simple Idea About HTML and Browser:</h3>
+                            <p class="section_txt">Why is HTML a markup language? Because the text within an HTML file is converted into elements based on the HTML element rules for each element. Each element extracted from the text is converted into a static-looking element in the browser. For example, if you provide the valid markup text for the "DIV" element in the HTML file, which starts with an opening tag with the word "div" and ends with a closing tag with the word "/div," the browser will take this text and convert it into a static-looking element. So, markup means that you provide a text with some writing rules, and the program or browser takes it and renders it in a static known look, repeating this for all content in the HTML file. At the end, all "div" elements will look similar unless other languages are used, such as CSS, or if no style is applied as an attribute to the element. In simple terms, markup means that whenever you find "x," you draw it in your program as "shape_x," and so on for all other elements.</p>
+                            <h4 class="sub_heading">How to Create a Simple Markup Language such as HTML:</h4>
+                            <p class="section_txt">As a quick example, if we want to create a markup language such as HTML, we will need a computer program to read that language or text included in the file. According to the valid syntax of the elements, it will programmatically create those elements and repeat the process. For example, if we use Python as a programming language to create a simple browser using Tkinter, a simple library that can program the elements in desktop apps, we ignore the fact that browsers deal with HTTP protocols and need custom rules. We can say that the new language text will be contained in a text file within our Python program or provided as an API response to the Python program. The first step is to define the syntax of the text of our markup language and the elements we can draw using the Python program and Tkinter. Then users can create the text file that includes the valid syntax of the new markup language.</p>
+                            <p class="section_txt">The second step, after the browser gets the file containing the new markup language (Python), will be for the programming language to try to read the provided text file, which includes the new HTML or our new markup language, which is actually a text but has specific rules or syntax when created. Then, Python can use a search technique or methods such as "REGEX" to search for the syntax of each element, and for each found element, it will write equivalent programming code that is needed to create the element in the same way as provided in the text but in Tkinter using programming methods. For example, "H1" will create a bigger title element in Tkinter, and so on. At the end, we can say that HTML is an easy way for people who do not have access to browsers or cannot program to provide text that browsers can search for and convert into programming methods that ultimately draw the page as the creator intended. Instead of wasting time creating one page, it is just about learning the markup language syntax and providing text with the name of the elements so that the browser can draw each element programmatically in the app, which in our case is the Tkinter app.</p>
+                            <p class="section_txt">In the end, the Tkinter app will be able to convert any equal pages to the same looking elements. For example, any file received that contains only "h1" will be rendered as a header with specific size and uniformity across all instances. That is also why some browsers may differ when dealing with HTML, as each one processes the file using its own program. However, top browsers will follow a set of major guidelines, so changes will not be very big or noticeable; the differences will mainly be seen in some high-level new styles or elements, and not in the sizes of "h1," etc., or even in its support.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <!-- Right Aside -->
+        <aside class="post_side box_shadow">
+            <div class="post_thumbnail box_shadow">
+                <figure class="thumbnail_figure">
+                    <img class="thumbnail_img" src="static/images/html.webp" alt="html5 logo" />
+                    <figcaption class="thumbnail_figcaption"><strong>HTML Intro</strong></figcaption>
+                </figure>
+            </div>
+            <div class="about_container box_shadow">
+                <h3 class="post_side_title">About:</h3>
+                <p class="about_text"> this topic talks about HTML as side talk info without describe syntax or techning HTML, it just give you example what is HTML, it not require previous exp to read it, and will prepeare you to start study HTML, note this topic is from Author point of view and understanding HTML also will give you simple example if you a programmer how to create simple markup language and browser read it and draw it. </p>
+            </div>
+            <div class="archive_container box_shadow">
+                <h3 class="side_archive_title">Archives:</h3>
+                <div class="archive_links d_flex flex_column align_start justify_center">
+                    <a class="archive_link" href="#">March 1993</a>
+                    <a class="archive_link" href="#">April 1993</a>
+                    <a class="archive_link" href="#">May 1993</a>
+                    <a class="archive_link" href="#">January 2014</a>
+                    <a class="archive_link" href="#">February 2014</a>
+                    <a class="archive_link" href="#">March 2014</a>
+                    <a class="archive_link" href="#">April 2014</a>
+                    <a class="archive_link" href="#">May 2014</a>
+                    <a class="archive_link" href="#">August 2014</a>
+                    <a class="archive_link" href="#">July 2014</a>
+                    <a class="archive_link" href="#">June 2014</a>
+                </div>
+            </div>
+            <div class="other_posts box_shadow">
+                <h3 class="other_title">Read Also:</h3>
+                <div class="other_container d_flex align_center flex_wrap gap_2">
+                    <a href="#" class="other_url">JS intro</a>
+                    <a href="#" class="other_url">Python intro</a>
+                </div>
+            </div>
+        </aside>
+        <!-- footer -->
+        <footer class="post_foot foot_style d_flex justify_between align_center">
+            <span>Follow Us On:</span>
+            <span>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-youtube"></i>
+            </span>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Creating Dynamic Modal with masking same or better than actual bs modal as this supported by any browser with css can kids understand easy not only supported by any browser */
+/*body:has(.active_mask) {overflow: hidden} jsless for keep my code jsless and dynamic i will not remove the overflow from body as let user look speacfic part like the transparent like bg */
+/* Global Style of modal content not related to function */
+.set_modal .modal_content {
+    min-width: 50%;
+    max-width: 50%;
+    width: 50%;
+    padding: 8px;
+    gap: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-rows: auto minmax(30vh, auto) auto;
+    grid-template-areas:
+        "mheader"
+        "mbody"
+        "mfooter";
+}
+
+.set_modal .modal_content .modal_header {
+    grid-area: mheader;
+    max-height: 15vh;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 8px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 90% 10%;
+    grid-template-areas: "mtheader mtclose";
+}
+
+.set_modal .modal_content .modal_body {
+    grid-area: mbody;
+    max-height: 54vh;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 8px;
+}
+
+.set_modal .modal_content .modal_footer {
+    grid-area: mfooter;
+    max-height: 15vh;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 8px;
+}
+
+.set_modal .mhead_title {
+    grid-area: mtheader;
+    text-align: center;
+}
+
+.set_modal .mhead_closer_cont {
+    grid-area: mtclose;
+    align-self: start;
+    text-align: right;
+}
+
+.set_modal .mhead_closer {
+    border-color: gainsboro;
+    border-radius: 50%;
+    min-height: 35px;
+    width: 80%;
+    max-width: 35px;
+    cursor: pointer;
+    font-size: 0.825rem;
+}
+
+.set_modal .mhead_title_span {
+    border-radius: 12px;
+    word-break: break-word;
+    padding: 3px 22px;
+    background: royalblue;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0), 0 6px 20px 0 rgb(33 120 119 / 19%);
+    text-shadow: 2px 2px 4px #d7ce4d;
+}
+
+/* CSS Functioning for modal and masking */
+.set_modal:not(.active_mask) {
+    display: none !important;
+}
+
+.active_mask {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    min-height: 100%;
+    background: rgba(222, 243, 246, 0.72);
+    z-index: 2;
+}
+
+/* dynamic and reduce js adding extra class for active content*/
+.set_modal.active_mask .modal_content {
+    position: fixed;
+    top: 12.5vh;
+    /*note relative to .modal_content width as 50 width so half of it 25 to be centered*/
+    left: 25%;
+    opacity: 1;
+    background: white;
+    z-index: 3;
+}
+
+/* Media query for modal */
+@media(max-width: 300px) {
+
+    /* modal header fix on smallest screens (very small screens) */
+    .set_modal .modal_content .modal_header {
+        grid-template-columns: auto minmax(max-content, 25px);
+    }
+
+    .set_modal .mhead_title {
+        margin: 0px;
+        padding-left: 0px;
+    }
+
+    .set_modal .mhead_title_span {
+        padding: 4px 6px;
+        font-size: 0.825rem;
+    }
+
+    .set_modal .mhead_closer {
+        font-size: 0.525rem;
+        max-width: 25px;
+    }
+
+    .set_modal .modal_footer {
+        justify-content: space-around;
+    }
+}
+
+/* Mobiles */
+@media(max-width: 600px) {
+    .set_modal .modal_content {
+        min-width: 90% !important;
+        max-width: 90% !important;
+        width: 90% !important;
+    }
+
+    .set_modal.active_mask .modal_content {
+        left: 5% !important;
+    }
+}
+
+/* Ipad */
+@media(min-width: 601px) and (max-width: 800px) {
+    .set_modal .modal_content {
+        min-width: 80% !important;
+    }
+
+    .set_modal.active_mask .modal_content {
+        left: 10% !important;
+    }
+}
