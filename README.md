@@ -54,7 +54,7 @@ As a full-stack web developer, my primary focus is on application development, l
 
 I do not prioritize design expertise that is akin to that of fashion professionals who match colors and consider aesthetic details. Instead, I focus on creating applications similar to those developed by major companies like Google, YouTube, and Facebook, which prioritize functionality and user engagement over design intricacies.
 
-My approach involves ensuring responsiveness and adherence to grid layouts, with an emphasis on using well-structured and advanced CSS3 techniques. Design elements are created without relying on professional design tools or external images typically used by designers or frontend-only developers.
+My approach involves ensuring responsiveness and adherence to grid layouts, with an emphasis on using well-structured and advanced CSS3 techniques. Design elements are created without relying on professional design tools or external images typically created by designers or frontend-only developers, also my Ideas more focus on apps features database desgin and problem solving not better in create fancy desgin as it require diff type of ideas and creative thinking.
 
 
 # About project
