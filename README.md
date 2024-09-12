@@ -1,5 +1,7 @@
 # Blog Post Project
 
+![image](https://github.com/user-attachments/assets/a76051dc-16ed-422b-a4be-9920ef7baaa5)
+
 This project is a simple responsive design for a blog that includes a layout for individual blog posts. It contains two pages, and I utilized CSS3 features such as Grid and Flexbox to ensure full responsiveness on large, medium, and small screens.
 
 # Languages:
@@ -11,6 +13,11 @@ This project is a simple responsive design for a blog that includes a layout for
 1. The project uses a small set of classes similar to Bootstrap.
 2. The names of the classes used are almost identical to Bootstrap 4.
 3. If you include Bootstrap in your project, there will be no conflicts since I have used "_" instead of "-" in class names. For short, single-word classes such as "btn," I added an extra consonant, "set," at the beginning for all similar classes such as set_modal.
+4. "As a full-stack web developer, my primary focus is on application development, logic, problem-solving, database management, and user experience. While I have a strong understanding of HTML5 and CSS3 functionality, such as media queries, my emphasis is not on design tools that require extensive experience, like Figma, photoshop, etc.
+
+I do not prioritize design expertise that is akin to that of fashion professionals who match colors and consider aesthetic details. Instead, I focus on creating applications similar to those developed by major companies like Google, YouTube, and Facebook, which prioritize functionality and user engagement over design intricacies.
+
+My approach involves ensuring responsiveness and adherence to grid layouts, with an emphasis on using well-structured and advanced CSS3 techniques. Design elements are created without relying on professional design tools or external images typically used by designers or frontend-only developers."
 
 # Advanced Features:
 This project implements advanced masking with CSS, which, in my opinion, is the most suitable and well-supported method for modal dialogs across all browsers. I aimed to simulate the Bootstrap modal. This masking technique allows for implementation that is almost identical to Bootstrap, but simpler and cleaner in code.
@@ -41,4 +48,10 @@ You can test the full CSS masking behavior by toggling the "active_mask" class o
         </div>
     </div>
 ```
+
+![image](https://github.com/user-attachments/assets/267bcc2f-b7b4-4a93-bc54-03d79669b36a)
+
+
+# About project
+This project is the first project in the Front End Web Developer and Digital Freelancing course at Udacity.com. Nothing was copied from external resources; 
 
