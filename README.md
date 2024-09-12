@@ -8,7 +8,9 @@ This project is a simple responsive design for a blog that includes a layout for
 * JavaScript
 
 # Notes:
-1. The project uses a small set of classes similar to Bootstrap. The names of the classes used are almost identical to Bootstrap 4. If you include Bootstrap in your project, there will be no conflicts since I have used "_" instead of "-" in class names. For short, single-word classes such as "btn," I added an extra consonant, "set," at the beginning for all similar classes.
+1. The project uses a small set of classes similar to Bootstrap.
+2. The names of the classes used are almost identical to Bootstrap 4.
+3. If you include Bootstrap in your project, there will be no conflicts since I have used "_" instead of "-" in class names. For short, single-word classes such as "btn," I added an extra consonant, "set," at the beginning for all similar classes.
 
 # Advanced Features:
 This project implements advanced masking with CSS, which, in my opinion, is the most suitable and well-supported method for modal dialogs across all browsers. I aimed to simulate the Bootstrap modal. This masking technique allows for implementation that is almost identical to Bootstrap, but simpler and cleaner in code.
