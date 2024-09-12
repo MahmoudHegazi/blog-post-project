@@ -2,9 +2,9 @@
 it's simple repsonsive desgin for blog which include also a desgin for blog post, the project cotnains two page, also I'm using css3 such as grid and flexbox to make it full responsive on large, mid and small screens.
 
 # languages:
-*. HTML5
-*. CSS3
-*. JavaScript
+* HTML5
+* CSS3
+* JavaScript
 
 # Notes:
 1. project using small based class like bootstrap also names of classes used almost identical to bootstrap4 while if you are included bootstrap into your project no single calls will confliect with bs4 classes as i'm using "_" instead of "-" and for short 1 word classes such as btn i added extra constient word which is "set" at the begning for all similr
