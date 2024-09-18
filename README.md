@@ -47,15 +47,6 @@ You can test the full CSS masking behavior by toggling the "active_mask" class o
 
 ![image](https://github.com/user-attachments/assets/267bcc2f-b7b4-4a93-bc54-03d79669b36a)
 
-# why simple desgin:
-No external desgin created by professional desginers used for project copyright!
-
-As a full-stack web developer, my primary focus is on application development, logic, problem-solving, database management, and user experience. While I have a strong understanding of HTML5 and CSS3 functionality, such as media queries, flexbox, grid, bootstrap my emphasis is not on design tools that require extensive experience, like Figma, photoshop, etc.
-
-I do not prioritize design expertise that is akin to that of fashion professionals who match colors and consider aesthetic details. Instead, I focus on creating applications similar to those developed by major companies like Google, YouTube, and Facebook, which prioritize functionality and user engagement over design intricacies.
-
-My approach involves ensuring responsiveness and adherence to grid layouts, with an emphasis on using well-structured and advanced CSS3 techniques. Design elements are created without relying on professional design tools or external images typically created by designers or frontend-only developers, also my Ideas more focus on apps features database desgin and problem solving not better in create fancy desgin as it require diff type of ideas and creative thinking.
-
 
 # About project
 This project is the first project in the Front End Web Developer and Digital Freelancing course at Udacity.com. Nothing was copied from external resources; 
